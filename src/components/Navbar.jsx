@@ -23,19 +23,19 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`flex w-full items-center justify-between px-14 py-4 bg-transparent ${isSticky ? "sticky top-0 left-0 shadow-xl bg-gray-100" : "static"
+        <nav className={`flex w-full items-center justify-between px-14 py-4 bg-transparent transition-colors duration-300 ease-in-out ${isSticky ? "sticky top-0 left-0 shadow-xl bg-white/90" : "static"
             }`}>
             <div className='flex w-fit items-center justify-between'>
                 <h1 className={`font-serif font-bold text-base mr-2`}>
                     <span className={isSticky ? "text-blue-700" : ""}>TVS</span>
                     <span className={isSticky ? "text-lime-700" : ""}> Emerald</span>
                 </h1>
-                <h1 className={`font-bold font-sans text-xl border-l-2  pl-2 ${isSticky ? "border-gray-400 text-green-700" : "border-gray-300"}`}>Verde Vista</h1>
+                <h1 className={`font-bold font-sans text-2xl border-l-2  pl-2 ${isSticky ? "border-gray-400 text-green-700" : "border-gray-300"}`}>Verde Vista</h1>
             </div>
             <ul className={`flex items-center w-fit justify-between font-sans font-semibold text-base ${isSticky ? "text-black" : ""}`}>
+                <li className='mx-2 hover:text-black'><a href="#Overview">Overview</a></li>
                 <li className='mx-2 hover:text-black'><a href="#Highlight">Highlight</a></li>
                 <li className='mx-2 hover:text-black'><a href="#Amenities">Amenities</a></li>
-                <li className='mx-2 hover:text-black'><a href="#Overview">Overview</a></li>
                 <li className='mx-2 hover:text-black'><a href="#Price_List">Price List</a></li>
                 <li className='mx-2 hover:text-black'><a href="#Floor_Plan">Floor Plan</a></li>
                 <li className='mx-2 hover:text-black'><a href="#Gallary">Gallary</a></li>
